@@ -49,10 +49,23 @@ public class TheDungeon extends ActionBarActivity
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
+        Fragment truc = null;
+
+        switch (position){
+            case 0:
+                truc = new eleve_fragment();
+                break;
+            case 1:
+                truc = new prof_fragment();
+                break;
+            case 2:
+                truc = new truc_fragment();
+                break;
+        }
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, truc)
                 .commit();
     }
 
@@ -80,6 +93,11 @@ public class TheDungeon extends ActionBarActivity
                 mTitle = getString(R.string.title_section7);
                 break;
         }
+    }
+
+    @Override
+    public void onAttachFragment(Fragment fragment) {
+        super.onAttachFragment(fragment);
     }
 
     public void restoreActionBar() {
