@@ -1,16 +1,18 @@
 <resources>
-    <string name="app_name">DungeonII</string>
+    <string name="app_name">DungeonII. Stronger than ever.</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_the_dungeon">TheDungeon</string>
+    <string name="hello_world">Hello world and hell!</string>
+    <string name="action_settings">Settings of doom</string>
+    <string name="title_activity_the_dungeon">TheDungeon...Welcome in the dark side.</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">♥ Ton Profil ♥</string>
+    <string name="title_section2">Près de chez toi</string>
+    <string name="title_section3">Tes élèves</string>
+    <string name="title_section4">Tes professeurs</string>
+    <string name="title_section5">Tes messages</string>
+    <string name="title_section6">Tes favoris</string>
+    <string name="title_section7">Invite tes amis</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_example">Example action</string>
 </resources>
