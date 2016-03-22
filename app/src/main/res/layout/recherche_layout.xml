@@ -50,4 +50,59 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/imageSwitcher" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Name"
+        android:layout_marginTop="32dp"
+        android:text="Name"
+        android:layout_below="@+id/Btn_choose"
+        android:layout_toEndOf="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Eleve"
+        android:id="@+id/nb_eleves"
+        android:layout_alignTop="@+id/Name"
+        android:layout_alignEnd="@+id/Btn_choose" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Profs"
+        android:id="@+id/nb_profs"
+        android:layout_alignTop="@+id/nb_eleves"
+        android:layout_alignStart="@+id/Btn_cancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Level"
+        android:id="@+id/level"
+        android:layout_alignTop="@+id/nb_profs"
+        android:layout_toStartOf="@+id/imageButton2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Description"
+        android:id="@+id/desc"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/Name"
+        android:layout_toStartOf="@+id/nb_eleves" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_cptnce"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Name"
+        android:layout_below="@+id/desc" />
+
 </RelativeLayout>

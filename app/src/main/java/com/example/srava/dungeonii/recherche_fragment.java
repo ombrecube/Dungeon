@@ -16,5 +16,6 @@ public class recherche_fragment extends android.support.v4.app.Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.recherche_layout, container, false);
         return rootview;
+
     }
 }
