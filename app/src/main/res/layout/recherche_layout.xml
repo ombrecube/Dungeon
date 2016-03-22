@@ -3,12 +3,51 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/lagon">
 
-    <TextView
+    <ImageSwitcher
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recherche"
-        android:id="@+id/textView"
-        android:layout_marginTop="126dp"
+        android:id="@+id/imageSwitcher"
+        android:layout_marginTop="97dp"
+        android:background="@android:mipmap/sym_def_app_icon"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageButton"
+        android:background="@android:drawable/ic_media_rew"
+        android:layout_alignBottom="@+id/imageSwitcher"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageSwitcher" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@android:drawable/ic_media_ff"
+        android:layout_alignBottom="@+id/imageSwitcher"
+        android:layout_alignEnd="@+id/Btn_cancel"
+        android:layout_alignTop="@+id/imageSwitcher" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Je te choisis"
+        android:id="@+id/Btn_choose"
+        android:layout_alignTop="@+id/Btn_cancel"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageSwitcher" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Non"
+        android:id="@+id/Btn_cancel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageSwitcher" />
+
 </RelativeLayout>
