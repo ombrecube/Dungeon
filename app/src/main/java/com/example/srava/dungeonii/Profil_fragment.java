@@ -1,6 +1,5 @@
 package com.example.srava.dungeonii;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -10,12 +9,12 @@ import android.view.ViewGroup;
 /**
  * Created by lagonl on 16/03/2016.
  */
-public class truc_fragment extends android.support.v4.app.Fragment{
+public class Profil_fragment extends android.support.v4.app.Fragment{
     View rootview;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        rootview = inflater.inflate(R.layout.truc_layout, container, false);
+        rootview = inflater.inflate(R.layout.profil_layout, container, false);
         return rootview;
     }
 }

@@ -5,18 +5,13 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 
 public class TheDungeon extends ActionBarActivity
@@ -53,13 +48,25 @@ public class TheDungeon extends ActionBarActivity
 
         switch (position){
             case 0:
-                truc = new eleve_fragment();
+                truc = new Profil_fragment();
                 break;
             case 1:
-                truc = new prof_fragment();
+                truc = new recherche_fragment();
                 break;
             case 2:
-                truc = new truc_fragment();
+                truc = new eleve_fragment();
+                break;
+            case 3:
+                truc = new prof_fragment();
+                break;
+            case 4:
+                truc = new message_fragment();
+                break;
+            case 5:
+                truc = new favoris_fragment();
+                break;
+            case 6:
+                truc = new invite_fragment();
                 break;
         }
         // update the main content by replacing fragments
