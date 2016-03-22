@@ -63,7 +63,7 @@ public class TheDungeon extends ActionBarActivity
                 truc = new message_fragment();
                 break;
             case 5:
-                truc = new favoris_fragment();
+                truc = new Favoris_frag();
                 break;
             case 6:
                 truc = new invite_fragment();

@@ -7,8 +7,14 @@ public class Credential {
 
     public String username;
     public String password;
+    public int idProfil;
 
     public Credential() {
+    }
+
+    public Credential(int IDProfil)
+    {
+        this.idProfil = IDProfil;
     }
 
     public Credential(String username, String password) {
